@@ -35,6 +35,8 @@ class WeatherViewController: UIViewController {
     var latitude: Double?
     var longitude: Double?
     
+    var weathersList: [WeatherList] = []
+    
     // MARK: - LifeCycle
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -43,6 +45,8 @@ class WeatherViewController: UIViewController {
         registerCell()
         setupLocationManager()
         getCurrentWeater(lat: latitude ?? Settings.YEREVAN.latitude.rawValue,
+                         lon: longitude ?? Settings.YEREVAN.longitude.rawValue)
+        getWeaters(lat: latitude ?? Settings.YEREVAN.latitude.rawValue,
                          lon: longitude ?? Settings.YEREVAN.longitude.rawValue)
     }
     
@@ -108,13 +112,34 @@ class WeatherViewController: UIViewController {
             }
         }
     }
+    
+    func getWeaters(lat: Double, lon: Double) {
+        activityIndicator.isHidden = false
+        activityIndicator.startAnimating()
+        WeatherService.shered.weathersListResponse(appid: Settings.Weather.ApiKey, lat: lat, lon: lon, units: Settings.WeatherType.Metric.rawValue) { (weaterResponseData) in
+            switch weaterResponseData {
+            case .base(response: let baseResposne):
+                CheckBaseHelper.checkBaseResponse(baseResposne, viewController: self)
+            case .success(let resultsData):
+                guard let list = resultsData.weathersList else {return}
+                let calendar = Calendar.current
+                self.weathersList = list.filter({$0.day == calendar.component(.day, from: Date())})
+            case .isOffline:
+                return
+            }
+            DispatchQueue.main.async {
+                self.activityIndicator.stopAnimating()
+                self.todayCollectionView.reloadData()
+            }
+        }
+    }
 }
 
 // MARK: - UICollectionViewDataSource
 extension WeatherViewController:  UICollectionViewDataSource {
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
         if collectionView == todayCollectionView {
-            return 13
+            return weathersList.count
         } else {
             return 5
         }
@@ -125,6 +150,7 @@ extension WeatherViewController:  UICollectionViewDataSource {
         let nextDaysCollectionViewCell = collectionView.dequeueReusableCell(withReuseIdentifier: WeatherCollectionViewCell.id, for: indexPath) as? WeatherCollectionViewCell
         
         if collectionView == todayCollectionView {
+            todayCollectionViewCell?.weatherTadayList = weathersList[indexPath.row]
             return todayCollectionViewCell ?? UICollectionViewCell()
         } else {
             return nextDaysCollectionViewCell ?? UICollectionViewCell()

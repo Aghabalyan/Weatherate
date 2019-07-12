@@ -34,17 +34,25 @@ class WeatherForm: Mappable {
 
 class WeatherResponse: Mappable {
     
+    var weathersList: [WeatherList]?
     var weather: [Weather]?
     var main: Main?
     var name: String?
+    var coordinate: Coordinate?
+    var date: Double?
     
     required init?(map: Map) { }
     init() { }
     
     func mapping(map: Map) {
+        
         weather <- map["weather"]
         main <- map["main"]
         name <- map["name"]
+        coordinate <- map["coord"]
+        date <- map["dt"]
+        
+        weathersList <- map["list"]
     }
 }
 
