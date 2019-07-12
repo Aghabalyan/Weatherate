@@ -10,6 +10,11 @@ import UIKit
 
 class WeatherCollectionViewCell: UICollectionViewCell {
     
+    // MARK: - IBOutlet
+    @IBOutlet weak var dateLabel: UILabel!
+    @IBOutlet weak var imageView: UIImageView!
+    @IBOutlet weak var weatherLabel: UILabel!
+    
     // MARK: - Variables
     static let id = "weatherCell"
     static let name = "WeatherCollectionViewCell"

@@ -10,40 +10,59 @@ import ObjectMapper
 
 class WeatherForm: Mappable {
     
-    var results: Int?
+    var lat: Double?
+    var lon: Double?
+    var appid: String?
+    var units: String?
     
-    init(results: Int) {
-        self.results = results
+    init(lat: Double, lon: Double, appid: String, units: String) {
+        self.lat = lat
+        self.lon = lon
+        self.appid = appid
+        self.units = units
     }
     
     required init?(map: Map) { }
     
     func mapping(map: Map) {
-        results <- map["results"]
+        lat <- map["lat"]
+        lon <- map["lon"]
+        appid <- map["appid"]
+        units <- map["units"]
     }
 }
 
 class WeatherResponse: Mappable {
     
-    var results: [Weather]?
+    var weather: [Weather]?
+    var main: Main?
+    var name: String?
     
     required init?(map: Map) { }
     init() { }
     
     func mapping(map: Map) {
-        results <- map["results"]
+        weather <- map["weather"]
+        main <- map["main"]
+        name <- map["name"]
     }
 }
 
 class Weather: Mappable {
     
-    var userId: String?
+    var id: Int?
+    var main: String?
+    var description: String?
+    var icon: String?
     
     required init?(map: Map) { }
     init() { }
     
     func mapping(map: Map) {
-        userId <- map["id.value"]
+        id <- map["id"]
+        main <- map["main"]
+        description <- map["description"]
+        icon <- map["icon"]
     }
 }
 
