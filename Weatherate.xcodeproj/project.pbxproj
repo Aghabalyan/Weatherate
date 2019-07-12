@@ -14,9 +14,9 @@
 		C5503BB422D7F20400C83919 /* WeatherCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5503BB222D7F20400C83919 /* WeatherCollectionViewCell.swift */; };
 		C5503BB522D7F20400C83919 /* WeatherCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = C5503BB322D7F20400C83919 /* WeatherCollectionViewCell.xib */; };
 		C5599ED122D898F600F1DBDC /* Coordinate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5599ED022D898F600F1DBDC /* Coordinate.swift */; };
-		C5599ED322D8998E00F1DBDC /* City.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5599ED222D8998E00F1DBDC /* City.swift */; };
 		C5599ED522D89F0B00F1DBDC /* Main.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5599ED422D89F0B00F1DBDC /* Main.swift */; };
 		C5599ED822D8AC8E00F1DBDC /* Settings.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5599ED722D8AC8E00F1DBDC /* Settings.swift */; };
+		C5599EDA22D9247A00F1DBDC /* WeatherList.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5599ED922D9247A00F1DBDC /* WeatherList.swift */; };
 		C55E928B22D68EA2000177F4 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C55E928A22D68EA2000177F4 /* AppDelegate.swift */; };
 		C55E929022D68EA2000177F4 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C55E928E22D68EA2000177F4 /* Main.storyboard */; };
 		C55E929222D68EA3000177F4 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C55E929122D68EA3000177F4 /* Assets.xcassets */; };
@@ -41,9 +41,9 @@
 		C5503BB222D7F20400C83919 /* WeatherCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherCollectionViewCell.swift; sourceTree = "<group>"; };
 		C5503BB322D7F20400C83919 /* WeatherCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = WeatherCollectionViewCell.xib; sourceTree = "<group>"; };
 		C5599ED022D898F600F1DBDC /* Coordinate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Coordinate.swift; sourceTree = "<group>"; };
-		C5599ED222D8998E00F1DBDC /* City.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = City.swift; sourceTree = "<group>"; };
 		C5599ED422D89F0B00F1DBDC /* Main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Main.swift; sourceTree = "<group>"; };
 		C5599ED722D8AC8E00F1DBDC /* Settings.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Settings.swift; sourceTree = "<group>"; };
+		C5599ED922D9247A00F1DBDC /* WeatherList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherList.swift; sourceTree = "<group>"; };
 		C55E928722D68EA2000177F4 /* Weatherate.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Weatherate.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C55E928A22D68EA2000177F4 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		C55E928F22D68EA2000177F4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -240,8 +240,8 @@
 			children = (
 				C5503BAC22D7E66B00C83919 /* Weather.swift */,
 				C5599ED022D898F600F1DBDC /* Coordinate.swift */,
-				C5599ED222D8998E00F1DBDC /* City.swift */,
 				C5599ED422D89F0B00F1DBDC /* Main.swift */,
+				C5599ED922D9247A00F1DBDC /* WeatherList.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -370,9 +370,9 @@
 				C55E92AB22D690F3000177F4 /* DateFormaterHelper.swift in Sources */,
 				C55E92A222D69076000177F4 /* BaseService.swift in Sources */,
 				C55E92A822D690CB000177F4 /* ValidationError.swift in Sources */,
+				C5599EDA22D9247A00F1DBDC /* WeatherList.swift in Sources */,
 				C5503BAD22D7E66B00C83919 /* Weather.swift in Sources */,
 				C55E92AF22D6912F000177F4 /* CheckBaseHelper.swift in Sources */,
-				C5599ED322D8998E00F1DBDC /* City.swift in Sources */,
 				C55E92A622D690AE000177F4 /* BaseState.swift in Sources */,
 				C55E92B122D69155000177F4 /* AlertControllerHelper.swift in Sources */,
 				C575CDE122D7551A00B895DB /* GradientView.swift in Sources */,
