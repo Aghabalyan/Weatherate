@@ -10,7 +10,7 @@ import ObjectMapper
 
 class Main: Mappable {
     
-    var temp: Int?
+    var temp: Double?
     var pressure: Double?
     var humidity: Double?
     var tempMin: Double?

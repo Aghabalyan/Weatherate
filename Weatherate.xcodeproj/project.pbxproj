@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		212C762FCAF6DB6CD0E168A7 /* Pods_Weatherate.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C58F2F02FFBC0AFDE055BD16 /* Pods_Weatherate.framework */; };
+		C546DF5522DC0F1C008E24D5 /* Sequence+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = C546DF5422DC0F1C008E24D5 /* Sequence+Extensions.swift */; };
 		C5503BAD22D7E66B00C83919 /* Weather.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5503BAC22D7E66B00C83919 /* Weather.swift */; };
 		C5503BAF22D7E6BB00C83919 /* WeatherService.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5503BAE22D7E6BB00C83919 /* WeatherService.swift */; };
 		C5503BB122D7E6D500C83919 /* WeatherViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5503BB022D7E6D500C83919 /* WeatherViewController.swift */; };
@@ -35,6 +36,7 @@
 
 /* Begin PBXFileReference section */
 		1D3B46F095911B20F2D3CD5A /* Pods-Weatherate.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Weatherate.release.xcconfig"; path = "Target Support Files/Pods-Weatherate/Pods-Weatherate.release.xcconfig"; sourceTree = "<group>"; };
+		C546DF5422DC0F1C008E24D5 /* Sequence+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Sequence+Extensions.swift"; sourceTree = "<group>"; };
 		C5503BAC22D7E66B00C83919 /* Weather.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Weather.swift; sourceTree = "<group>"; };
 		C5503BAE22D7E6BB00C83919 /* WeatherService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherService.swift; sourceTree = "<group>"; };
 		C5503BB022D7E6D500C83919 /* WeatherViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherViewController.swift; sourceTree = "<group>"; };
@@ -93,6 +95,14 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		C546DF5322DC0EDF008E24D5 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				C546DF5422DC0F1C008E24D5 /* Sequence+Extensions.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
 		C5599ED622D8AC8300F1DBDC /* Settings */ = {
 			isa = PBXGroup;
 			children = (
@@ -126,6 +136,7 @@
 				C55E929C22D6901E000177F4 /* Config */,
 				C55E929F22D6904F000177F4 /* Network */,
 				C55E92A922D690E0000177F4 /* Helpers */,
+				C546DF5322DC0EDF008E24D5 /* Extensions */,
 				C55E92B822D693E5000177F4 /* Services */,
 				C55E92B922D693F5000177F4 /* Models */,
 				C55E92B222D69170000177F4 /* Views */,
@@ -374,6 +385,7 @@
 				C5503BAD22D7E66B00C83919 /* Weather.swift in Sources */,
 				C55E92AF22D6912F000177F4 /* CheckBaseHelper.swift in Sources */,
 				C55E92A622D690AE000177F4 /* BaseState.swift in Sources */,
+				C546DF5522DC0F1C008E24D5 /* Sequence+Extensions.swift in Sources */,
 				C55E92B122D69155000177F4 /* AlertControllerHelper.swift in Sources */,
 				C575CDE122D7551A00B895DB /* GradientView.swift in Sources */,
 				C55E928B22D68EA2000177F4 /* AppDelegate.swift in Sources */,
