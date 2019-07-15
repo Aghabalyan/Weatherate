@@ -243,11 +243,20 @@
                         <outlet property="todayCollectionView" destination="kqx-LE-p7c" id="gzj-pZ-4ha"/>
                         <outlet property="weatherDescriptionLabel" destination="rbv-gX-3YJ" id="ZVW-h8-jzl"/>
                         <outlet property="weatherLabel" destination="Of6-8q-BOD" id="IUa-q1-t1T"/>
+                        <segue destination="9Hu-LH-QZq" kind="presentation" identifier="showSearchViewSegue" id="NdY-st-nzK"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1244.9275362318842" y="782.8125"/>
+        </scene>
+        <!--SearchViewController-->
+        <scene sceneID="Pvk-29-diX">
+            <objects>
+                <viewControllerPlaceholder storyboardName="Search" referencedIdentifier="SearchViewController" id="9Hu-LH-QZq" sceneMemberID="viewController"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dpm-u0-Qvz" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2034" y="783"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="a1i-D0-esa">
@@ -257,7 +266,7 @@
                     <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="2Kh-DF-lNG">
                         <rect key="frame" x="0.0" y="44" width="414" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
-                        <color key="barTintColor" red="0.47671324009999999" green="0.71195137500000005" blue="0.93336266280000002" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                        <color key="barTintColor" red="0.47843137254901957" green="0.71372549019607845" blue="0.93333333333333335" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                         <textAttributes key="titleTextAttributes">
                             <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         </textAttributes>
