@@ -1,11 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="5yM-g7-C6K">
-    <device id="retina6_1" orientation="portrait">
-        <adaptation id="fullscreen"/>
-    </device>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14835.7" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="5yM-g7-C6K">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14790.5"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -25,7 +23,7 @@
                                 <rect key="frame" x="0.0" y="88" width="414" height="808"/>
                                 <subviews>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="59e-YC-Bad">
-                                        <rect key="frame" x="0.0" y="0.0" width="414" height="626"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="414" height="610"/>
                                         <subviews>
                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Rlo-rp-C3R">
                                                 <rect key="frame" x="0.0" y="0.0" width="414" height="191"/>
@@ -93,20 +91,20 @@
                                                 </constraints>
                                             </view>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Today" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Jci-tu-aGD">
-                                                <rect key="frame" x="21" y="199" width="46" height="21"/>
+                                                <rect key="frame" x="21" y="191" width="46" height="21"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Fom-Zp-cZf">
-                                                <rect key="frame" x="16" y="231" width="382" height="1"/>
+                                                <rect key="frame" x="16" y="223" width="382" height="1"/>
                                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="1" id="XwM-uZ-Lj8"/>
                                                 </constraints>
                                             </view>
                                             <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="kqx-LE-p7c">
-                                                <rect key="frame" x="16" y="244" width="382" height="150"/>
+                                                <rect key="frame" x="16" y="236" width="382" height="150"/>
                                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="150" id="gag-Ww-wFQ"/>
@@ -130,20 +128,20 @@
                                                 </cells>
                                             </collectionView>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Next 5 days" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zBi-ed-8HO">
-                                                <rect key="frame" x="21" y="415" width="91" height="21"/>
+                                                <rect key="frame" x="21" y="407" width="91" height="21"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Oy0-FM-HDJ">
-                                                <rect key="frame" x="16" y="447" width="382" height="1"/>
+                                                <rect key="frame" x="16" y="439" width="382" height="1"/>
                                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="1" id="gTu-2k-mh0"/>
                                                 </constraints>
                                             </view>
                                             <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="HEi-Le-YUV">
-                                                <rect key="frame" x="16" y="460" width="382" height="150"/>
+                                                <rect key="frame" x="16" y="452" width="382" height="150"/>
                                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="150" id="xM9-He-nKc"/>
@@ -182,13 +180,13 @@
                                             <constraint firstItem="Fom-Zp-cZf" firstAttribute="leading" secondItem="59e-YC-Bad" secondAttribute="leading" constant="16" id="b6c-k8-3eH"/>
                                             <constraint firstItem="Jci-tu-aGD" firstAttribute="leading" secondItem="59e-YC-Bad" secondAttribute="leading" constant="21" id="bDP-at-dOt"/>
                                             <constraint firstAttribute="trailing" secondItem="kqx-LE-p7c" secondAttribute="trailing" constant="16" id="eGr-4R-DpB"/>
-                                            <constraint firstItem="Jci-tu-aGD" firstAttribute="top" secondItem="Rlo-rp-C3R" secondAttribute="bottom" constant="8" id="hWv-Gc-fHL"/>
+                                            <constraint firstItem="Jci-tu-aGD" firstAttribute="top" secondItem="Rlo-rp-C3R" secondAttribute="bottom" id="hWv-Gc-fHL"/>
                                             <constraint firstItem="zBi-ed-8HO" firstAttribute="leading" secondItem="59e-YC-Bad" secondAttribute="leading" constant="21" id="ibk-sC-kUS"/>
                                             <constraint firstItem="kqx-LE-p7c" firstAttribute="top" secondItem="Fom-Zp-cZf" secondAttribute="bottom" constant="12" id="irr-l5-E41"/>
                                             <constraint firstAttribute="trailing" secondItem="Fom-Zp-cZf" secondAttribute="trailing" constant="16" id="p3G-lp-pvJ"/>
                                             <constraint firstItem="HEi-Le-YUV" firstAttribute="top" secondItem="Oy0-FM-HDJ" secondAttribute="bottom" constant="12" id="uhR-ec-qvo"/>
                                             <constraint firstItem="kqx-LE-p7c" firstAttribute="top" secondItem="Fom-Zp-cZf" secondAttribute="bottom" constant="12" id="vdN-cQ-Ghh"/>
-                                            <constraint firstAttribute="bottom" secondItem="HEi-Le-YUV" secondAttribute="bottom" constant="16" id="wrG-8y-JbD"/>
+                                            <constraint firstAttribute="bottom" secondItem="HEi-Le-YUV" secondAttribute="bottom" constant="8" id="wrG-8y-JbD"/>
                                             <constraint firstItem="Oy0-FM-HDJ" firstAttribute="top" secondItem="zBi-ed-8HO" secondAttribute="bottom" constant="11" id="zcV-XO-BZA"/>
                                         </constraints>
                                     </view>
