@@ -17,6 +17,9 @@ enum DateFormat: String {
     case HoursAndSeconds = "HH:mm"
     case StandartDate = "yyyy-MM-dd"
     case specific = "d MMM yyyy"
+    case day = "d"
+    case hour = "h"
+    case month = "M"
 }
 
 enum DateFormatterFormats: String {
@@ -48,3 +51,4 @@ class DateFormattingHelper {
         return formatter.date(from: string) ?? Date()
     }
 }
+

@@ -19,6 +19,7 @@ class WeatherCollectionViewCell: UICollectionViewCell {
     // MARK: - Variables
     static let id = "weatherCell"
     static let name = "WeatherCollectionViewCell"
+    var isNextDays = false
     
     // MARK: - LifeCycle
     override func awakeFromNib() {
@@ -32,26 +33,13 @@ class WeatherCollectionViewCell: UICollectionViewCell {
             guard let main = weatherList.main else { return }
     
             if let temp = main.temp {
-                self.weatherLabel.text = "\(temp) º"
+                self.weatherLabel.text = "\(Int(temp)) º"
             }
             
-            if let dt = weatherList.date {
-                let date = Date(timeIntervalSince1970: dt)
-                let calendar = Calendar.current
-                let hour = calendar.component(.hour, from: date)
-                let day = calendar.component(.day, from: date)
-                let currentDay = calendar.component(.day, from: Date())
-                if day == currentDay {
-                   dateLabel.text = "\(hour)h"
-                }else {
-                    dateLabel.text = "- -"
-                }
-                
-                
-            }
-            
-            if let hour = weatherList.hour {
-                dateLabel.text = "\(hour)h"
+            if let hour = weatherList.hour, let month = weatherList.month, let day = weatherList.day {
+                dateLabel.text = isNextDays ? "\(month)/\(day)" : "\(hour)h"
+            }else {
+                dateLabel.text = "- -"
             }
             
             if let icon = weather[0].icon {
@@ -61,5 +49,4 @@ class WeatherCollectionViewCell: UICollectionViewCell {
             }
         }
     }
-
 }
