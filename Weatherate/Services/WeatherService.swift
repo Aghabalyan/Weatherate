@@ -17,7 +17,7 @@ class WeatherService {
     func weatherResponse(appid: String, lat: Double, lon: Double, units: String, completion: @escaping ((WeatherResponseData<WeatherResponse>) -> Void)) {
         BaseService.shared.post(endpoint: "/weather?appid=\(appid)&lat=\(lat)&lon=\(lon)&units=\(units)", object: [:], for: .unsecure)
             .responseString { (response) in
-                print(response.result.value ?? "result value is nil")
+                //print(response.result.value ?? "result value is nil")
                 if let responseHttp = response.response, let value = response.result.value {
                     if let baseResponse = BaseService.shared.checkBaseResponse(responseHttp, value) {
                         return completion(.base(response: baseResponse))
@@ -40,7 +40,7 @@ class WeatherService {
     func weathersListResponse(appid: String, lat: Double, lon: Double, units: String, completion: @escaping ((WeatherResponseData<WeatherResponse>) -> Void)) {
         BaseService.shared.post(endpoint: "/forecast?appid=\(appid)&lat=\(lat)&lon=\(lon)&units=\(units)", object: [:], for: .unsecure)
             .responseString { (response) in
-                print(response.result.value ?? "result value is nil")
+                //print(response.result.value ?? "result value is nil")
                 if let responseHttp = response.response, let value = response.result.value {
                     if let baseResponse = BaseService.shared.checkBaseResponse(responseHttp, value) {
                         return completion(.base(response: baseResponse))
